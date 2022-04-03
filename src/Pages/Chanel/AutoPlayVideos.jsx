@@ -26,7 +26,7 @@ function Videos() {
     <ul className="p-5 d-flex flex-column videolars list-unstyled">
       {photos?.length > 0 &&
         photos.map((photo) => (
-          <li className="videolar__item " key={photo.id}>
+          <li className="videolars__item " key={photo.id}>
             <Link className="videolar__link  " to={"/video/" + photo.id}>
               <img
                 className="videolar__img"

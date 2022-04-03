@@ -34,7 +34,7 @@ function Videos() {
                 width={250}
                 height={150}
               />
-              <p className="img-title text-decoration-none">{photo.title}</p>
+              <p className="img-title ">{photo.title}</p>
             </Link>
           </li>
         ))}

@@ -16,9 +16,7 @@ function Videoplayer() {
 
   React.useEffect(() => {
     (async () => {
-      const res = await fetch(
-        "https://jsonplaceholder.typicode.com/photos/" + user_id
-      );
+      const res = await fetch("https://jsonplaceholder.typicode.com/photos/");
 
       const data = await res.json();
 
@@ -27,23 +25,27 @@ function Videoplayer() {
       }
     })();
   }, []);
+
+  const selectedVideo =
+    photos.length > 0 && photos.find((u) => u.id === Number(user_id));
+  console.log();
   return (
     <div className="d-flex">
       <Navbar />
       <div>
         <div className="d-flex flex-column align-items-start">
           <ul className="p-5 d-flex  list-unstyled">
-            {photos && (
+            {selectedVideo && (
               <li className="videolar__item ">
                 <div className="videolar__link ">
                   <img
                     className="videolar__img"
-                    src={photos.url}
+                    src={selectedVideo.url}
                     alt="Img"
                     width={700}
                     height={500}
                   />
-                  <p className="img-titles">{photos.title}</p>
+                  <p className="img-titles">{selectedVideo.title}</p>
                   <div className="video-box d-flex justify-content-between align-items-center">
                     <p className="video-info">123.3K Views</p>
                     <div className="btn-box d-flex align-items-center">
