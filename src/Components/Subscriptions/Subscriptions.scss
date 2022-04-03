@@ -1,0 +1,28 @@
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.subcriptions {
+  padding-top: 59px;
+  &__header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #898989;
+  }
+  &__img {
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}

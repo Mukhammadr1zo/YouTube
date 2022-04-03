@@ -1,0 +1,63 @@
+.chanel {
+  display: flex;
+}
+
+.back-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+}
+.profile-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.profile-follower {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+
+.subs-btn {
+  background-color: #ff0000;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.btn-box {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.chanel-username {
+  padding: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+  margin-left: 35px;
+}
+
+.videolar {
+  overflow-y: auto;
+  height: 900px;
+}
