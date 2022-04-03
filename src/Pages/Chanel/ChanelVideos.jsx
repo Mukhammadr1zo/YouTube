@@ -22,7 +22,7 @@ function Videos() {
   }, []);
 
   return (
-    <ul className="p-5 d-flex videolar list-unstyled">
+    <ul className="p-5 d-flex videolars list-unstyled">
       {photos?.length > 0 &&
         photos.map((photo) => (
           <li className="videolar__item " key={photo.id}>
